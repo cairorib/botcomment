@@ -1,4 +1,3 @@
-from lib2to3.pgen2 import driver
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
@@ -31,7 +30,7 @@ class InstagramBot:
         campo_senha.send_keys(Keys.ENTER)
 
         time.sleep(5)
-        self.comentar('viagens')
+        self.comentar('adestramento')
 
     @staticmethod
     def digite_como_pessoa(frase,ondeDigitar):
@@ -70,5 +69,5 @@ class InstagramBot:
                 print(e)
                 time.sleep(5)
  
-nomeBot = InstagramBot('loginValido','senhaValida')
+nomeBot = InstagramBot('caozinhofelizeeducado','adestramento')
 nomeBot.login()
